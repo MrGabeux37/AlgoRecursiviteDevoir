@@ -19,7 +19,7 @@ public class Algorithme1 {
 			TempsDebut = System.nanoTime();
 		    resultat = CalcNbImpairRecursif(debut);
 			temps1=System.nanoTime()-TempsDebut;
-			Algoecrit1.write("façon 1: "+ debut + "e nombre impair: " + resultat +" Time: " + temps1/1000000 + " ms \n");
+			Algoecrit1.write("façon 1: "+ debut + "e nombre impair: " + resultat +" Time: " + temps1/1000000 + " ms /n");
       		System.out.println("façon 1: "+ debut + "e nombre impair: " + resultat +" Time: " + temps1/1000000 + " ms");
       		debut+=5;
 		}

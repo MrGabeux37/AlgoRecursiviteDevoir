@@ -20,7 +20,7 @@ public class Algorithme2 {
       		TempsDebut = System.nanoTime();
       		resultat = CalcNbImpairRecursif(debut,new BigInteger("1"),new BigInteger("1"),new BigInteger("1"));
 			temps2=System.nanoTime()-TempsDebut;
-			Algoecrit2.write("façon 2: "+ debut + "e nombre impair: " + resultat + " Time: " + temps2/1000000 + " ms \n");
+			Algoecrit2.write("façon 2: "+ debut + "e nombre impair: " + resultat + " Time: " + temps2/1000000 + " ms /n");
 			System.out.println("façon 2: "+ debut + "e nombre impair: " + resultat + " Time: " + temps2/1000000 + " ms");
 			debut+=5;
 		}
