@@ -1,0 +1,42 @@
+import java.io.*;
+
+public class Algorithme1 {
+	
+	public static void main(String[] args) throws IOException {
+		
+		File Algo1 = new File("TempsAlgo1.txt");
+		FileWriter FWAlgoecrit1 = new FileWriter(Algo1);
+		PrintWriter Algoecrit1 = new PrintWriter(FWAlgoecrit1);
+
+		int max=100;
+		int debut = 5;
+		long TempsDebut=0;
+		long temps1=0;
+		
+		while(debut<=max) {
+			TempsDebut = System.nanoTime();
+			long result = CalcNbImpairRecursif(debut);
+			temps1=System.nanoTime()-TempsDebut;
+			Algoecrit1.println("façon 1: "+ debut + "e nombre impair: " + result +" Time: " + temps1/1000000 + " ms");
+      		System.out.println("façon 1: "+ debut + "e nombre impair: " + result +" Time: " + temps1/1000000 + " ms");
+		}
+		
+		Algoecrit1.close();
+	}
+	
+	/** Calcul ternaire. 
+	 * Un calcul récursif qui va trouver chacunes de 3 réponses précédentes afin de calculer le nombre en question.
+	 * 
+	 * @param k est la position du chiffre impair à calculer.
+	 * @return La valeur à la position k.
+	 */
+	
+	public static int CalcNbImpairRecursif(int k) {
+		
+		if(k<4) return 1;
+		else return CalcNbImpairRecursif(k-1) + CalcNbImpairRecursif(k-2) + CalcNbImpairRecursif(k-3);
+		
+	}
+	
+
+}

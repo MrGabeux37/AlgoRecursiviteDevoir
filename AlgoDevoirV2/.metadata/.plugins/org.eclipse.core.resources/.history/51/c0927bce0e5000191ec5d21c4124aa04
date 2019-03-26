@@ -1,0 +1,50 @@
+import java.io.*;
+
+public class Algorithme2 {
+	
+	public static void main(String[] args) throws IOException {
+		
+		File Algo2 = new File("TempsAlgorithme2.txt");
+		FileWriter FWAlgoecrit2 = new FileWriter(Algo2);
+		BufferedWriter Algoecrit2 = new BufferedWriter(FWAlgoecrit2);
+		
+		int max=100;
+		int debut = 5;
+		long TempsDebut=0;
+		long temps2=0;
+		
+		
+		while(debut<=max) {
+			
+      		TempsDebut = System.nanoTime();
+			long result2 = CalcNbImpairRecursif(debut,1,1,1);
+			temps2=System.nanoTime()-TempsDebut;
+			Algoecrit2.write("façon 2: "+ debut + "e nombre impair: " + result2 + " Time: " + temps2/1000000 + " ms");
+			System.out.println("façon 2: "+ debut + "e nombre impair: " + result2 + " Time: " + temps2/1000000 + " ms");
+			debut+=5;
+		}
+		
+		Algoecrit2.close();
+	}
+	
+
+	/**
+	 * 
+	 * @param k est la position du chiffre impair à calculer.
+	 * @param a est la valeur de la 3e réponse précédente.
+	 * @param b est la valeur de la 2e réponse précédente.
+	 * @param c est la valeur de la réponse précédente.
+	 * @return La valeur à la position k.
+	 */
+	
+	public static int CalcNbImpairRecursif(int k, int a, int b, int c) {
+		
+		if(k==1) return a;
+		if(k==2) return b;
+		if(k==3) return c;
+		else return CalcNbImpairRecursif(k-1, b , c , a+b+c);
+		
+	}
+	
+
+}
