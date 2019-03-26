@@ -4,11 +4,14 @@ public class CalcNbImpairs {
 	
 	public static void main(String[] args) throws IOException {
 		
-		File Algo1 = new File("C:\\Users\\Gabriel Lacroix\\Documents\\GitHub\\Ecole\\AlgoRecursiviteDevoir\\ComparaisonDeTemps\\TempsAlgo1.txt");
-		File Algo2 = new File("C:\\Users\\Gabriel Lacroix\\Documents\\GitHub\\Ecole\\AlgoRecursiviteDevoir\\ComparaisonDeTemps\\TempsAlgo2.txt");
+		File Algo1 = new File("TempsAlgo1.txt");
+		File Algo2 = new File("TempsAlgo2.txt");
 		
-		FileWriter Algoecrit1 = new FileWriter(Algo1);
-		FileWriter Algoecrit2 = new FileWriter(Algo2);
+		FileWriter FWAlgoecrit1 = new FileWriter(Algo1);
+		FileWriter FWAlgoecrit2 = new FileWriter(Algo2);
+		
+		PrintWriter Algoecrit1 = new PrintWriter(FWAlgoecrit1);
+		PrintWriter Algoecrit2 = new PrintWriter(FWAlgoecrit2);
 		
 		int max=100;
 		int debut = 5;
@@ -21,13 +24,13 @@ public class CalcNbImpairs {
 			TempsDebut = System.nanoTime();
 			long result = CalcNbImpairRecursif(debut);
 			temps1=System.nanoTime()-TempsDebut;
-			Algoecrit1.write("façon 1: "+ debut + "e nombre impair: " + result +" Time: " + temps1/1000000 + " ms");
+			Algoecrit1.println("façon 1: "+ debut + "e nombre impair: " + result +" Time: " + temps1/1000000 + " ms");
       		System.out.println("façon 1: "+ debut + "e nombre impair: " + result +" Time: " + temps1/1000000 + " ms");
       		
       		TempsDebut = System.nanoTime();
 			long result2 = CalcNbImpairRecursif(debut,1,1,1);
 			temps2=System.nanoTime()-TempsDebut;
-			Algoecrit2.write("façon 2: "+ debut + "e nombre impair: " + result2 + " Time: " + temps2/1000000 + " ms");
+			Algoecrit2.println("façon 2: "+ debut + "e nombre impair: " + result2 + " Time: " + temps2/1000000 + " ms");
 			System.out.println("façon 2: "+ debut + "e nombre impair: " + result2 + " Time: " + temps2/1000000 + " ms");
 			debut+=5;
 		}
