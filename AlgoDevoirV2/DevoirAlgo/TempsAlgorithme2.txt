@@ -1,1 +1,20 @@
-façon 2: 5e nombre impair: 5 Time: 0 msfaçon 2: 10e nombre impair: 105 Time: 0 msfaçon 2: 15e nombre impair: 2209 Time: 0 msfaçon 2: 20e nombre impair: 46499 Time: 0 msfaçon 2: 25e nombre impair: 978793 Time: 0 msfaçon 2: 30e nombre impair: 20603361 Time: 0 msfaçon 2: 35e nombre impair: 433695873 Time: 0 msfaçon 2: 40e nombre impair: 539260895 Time: 0 msfaçon 2: 45e nombre impair: -1106123859 Time: 0 msfaçon 2: 50e nombre impair: -780807791 Time: 0 msfaçon 2: 55e nombre impair: 216042609 Time: 0 msfaçon 2: 60e nombre impair: -1645004157 Time: 0 msfaçon 2: 65e nombre impair: -750114111 Time: 0 msfaçon 2: 70e nombre impair: -1488695 Time: 0 msfaçon 2: 75e nombre impair: 1868586433 Time: 0 msfaçon 2: 80e nombre impair: -165993377 Time: 0 msfaçon 2: 85e nombre impair: -1618763179 Time: 0 msfaçon 2: 90e nombre impair: 2068304665 Time: 0 msfaçon 2: 95e nombre impair: -1300031551 Time: 0 msfaçon 2: 100e nombre impair: -1081317309 Time: 0 ms
+façon 2: 5e nombre impair: 5 Time: 0 ms 
+façon 2: 10e nombre impair: 105 Time: 0 ms 
+façon 2: 15e nombre impair: 2209 Time: 0 ms 
+façon 2: 20e nombre impair: 46499 Time: 0 ms 
+façon 2: 25e nombre impair: 978793 Time: 0 ms 
+façon 2: 30e nombre impair: 20603361 Time: 0 ms 
+façon 2: 35e nombre impair: 433695873 Time: 0 ms 
+façon 2: 40e nombre impair: 9129195487 Time: 0 ms 
+façon 2: 45e nombre impair: 192167404461 Time: 0 ms 
+façon 2: 50e nombre impair: 4045078385041 Time: 0 ms 
+façon 2: 55e nombre impair: 85147942685809 Time: 0 ms 
+façon 2: 60e nombre impair: 1792344042191491 Time: 0 ms 
+façon 2: 65e nombre impair: 37728417907092161 Time: 0 ms 
+façon 2: 70e nombre impair: 794174268033812681 Time: 0 ms 
+façon 2: 75e nombre impair: 16717180390659349953 Time: 0 ms 
+façon 2: 80e nombre impair: 351892690889787253855 Time: 0 ms 
+façon 2: 85e nombre impair: 7407257863344225493589 Time: 0 ms 
+façon 2: 90e nombre impair: 155921025001509181969177 Time: 0 ms 
+façon 2: 95e nombre impair: 3282100675585926834100161 Time: 0 ms 
+façon 2: 100e nombre impair: 69087442470169316923566147 Time: 0 ms 

@@ -17,9 +17,9 @@ public class Algorithme1 {
 		
 		while(debut<=max) {
 			TempsDebut = System.nanoTime();
-		    resultat = CalcNbImpairRecursif(debut);
+		    resultat = BigInteger.valueOf(CalcNbImpairRecursif(debut));
 			temps1=System.nanoTime()-TempsDebut;
-			Algoecrit1.write("façon 1: "+ debut + "e nombre impair: " + resultat +" Time: " + temps1/1000000 + " ms \n");
+			Algoecrit1.write("façon 1: "+ debut + "e nombre impair: " + resultat +" Time: " + temps1/1000000 + " ms /n");
       		System.out.println("façon 1: "+ debut + "e nombre impair: " + resultat +" Time: " + temps1/1000000 + " ms");
       		debut+=5;
 		}
@@ -34,10 +34,10 @@ public class Algorithme1 {
 	 * @return La valeur à la position k.
 	 */
 	
-	public static BigInteger CalcNbImpairRecursif(int k) {
+	public static long CalcNbImpairRecursif(int k) {
 		
-		if(k<4) return new BigInteger("1");
-		else return CalcNbImpairRecursif(k-1).add(CalcNbImpairRecursif(k-2)).add(CalcNbImpairRecursif(k-3));
+		if(k<4) return 1;
+		else return BigInteger.valueOf(CalcNbImpairRecursif(k-1)) + BigInteger.valueOf(CalcNbImpairRecursif(k-2)) + BigInteger.valueOf(CalcNbImpairRecursif(k-3));
 		
 	}
 	
