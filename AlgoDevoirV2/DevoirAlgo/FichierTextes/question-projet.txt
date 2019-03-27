@@ -1,0 +1,37 @@
+PSEUDOCODE ALGORITHMES
+
+Pseudocode Projet Algorithmique
+
+		1ere façon
+	Ternaire
+Algorithme CalcNbImpairs(k):
+Entrée : Un entier non négatif k
+Sortie: Le kth nombre de CalcNbImpairs
+
+	si k <= 2 alors
+		retourner 1
+	sinon
+		retourner CalcNbImpairs(k - 1) + CalcNbImpairs(k - 2) + CalcNbImpairs(k - 3)
+
+			2e façon
+	Linéaire tail-récursive
+Algorithme CalcNbImpairs(k, a, b, c):
+Entrée : En entier non négatif k, a = 1, b = 1, c = 1
+Sortie : Le kth nombre de CalcNbImpairs
+
+	si k = 0
+		retourner a
+	si k = 1
+		retourner b
+	si k = 2
+		retourner c
+	sinon
+		retourner CalcNbImpairs(k - 1, b, c, a + b + c)
+
+
+
+
+a) l'algorithme 1 étant une récursion exponentielle, chaque élément est calculé de nouveau a chaque appel de la fonction.
+ainsi plus le nombre impair est élevé plus l'algorithme doit faire des appels pour résoudre le calcul.
+Ceci résulte en une quantité de calculs exponentielle a chaque incrémentation de la méthode.
+ on peut dire que notre algorithme 1 est O(n^k).
