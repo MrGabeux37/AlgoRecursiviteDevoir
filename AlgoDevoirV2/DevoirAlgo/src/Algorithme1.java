@@ -5,10 +5,7 @@ public class Algorithme1 {
 	
 	public static void main(String[] args) throws IOException {
 		
-		File Algo1 = new File("TempsAlgorithme1.txt");
-		FileWriter FWAlgoecrit1 = new FileWriter(Algo1);
-		BufferedWriter Algoecrit1 = new BufferedWriter(FWAlgoecrit1);
-
+		
 		int max=100;
 		int debut = 5;
 		long TempsDebut=0;
@@ -16,15 +13,17 @@ public class Algorithme1 {
 		BigInteger resultat = new BigInteger("0");
 		
 		while(debut<=max) {
+			File Algo1 = new File("TempsAlgorithme1.txt");
+			FileWriter Algoecrit1 = new FileWriter(Algo1,true);
 			TempsDebut = System.nanoTime();
 		    resultat = CalcNbImpairRecursif(debut);
 			temps1=System.nanoTime()-TempsDebut;
 			Algoecrit1.write("façon 1: "+ debut + "e nombre impair: " + resultat +" Time: " + temps1/1000000 + " ms \n");
       		System.out.println("façon 1: "+ debut + "e nombre impair: " + resultat +" Time: " + temps1/1000000 + " ms");
       		debut+=5;
+      		Algoecrit1.close();
 		}
 		
-		Algoecrit1.close();
 	}
 	
 	/** Calcul ternaire. 

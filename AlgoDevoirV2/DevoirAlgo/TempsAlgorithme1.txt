@@ -1,0 +1,6 @@
+façon 1: 5e nombre impair: 5 Time: 0 ms 
+façon 1: 10e nombre impair: 105 Time: 0 ms 
+façon 1: 15e nombre impair: 2209 Time: 2 ms 
+façon 1: 20e nombre impair: 46499 Time: 10 ms 
+façon 1: 25e nombre impair: 978793 Time: 77 ms 
+façon 1: 30e nombre impair: 20603361 Time: 1297 ms 
