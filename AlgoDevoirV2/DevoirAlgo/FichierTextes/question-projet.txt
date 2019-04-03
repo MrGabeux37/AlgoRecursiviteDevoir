@@ -34,4 +34,7 @@ Sortie : Le kth nombre de CalcNbImpairs
 a) l'algorithme 1 étant une récursion exponentielle, chaque élément est calculé de nouveau a chaque appel de la fonction.
 ainsi plus le nombre impair est élevé plus l'algorithme doit faire des appels pour résoudre le calcul.
 Ceci résulte en une quantité de calculs exponentielle a chaque incrémentation de la méthode.
- on peut dire que notre algorithme 1 est O(n^k).
+ on peut dire que notre algorithme 1 est O(n^k).Il serait possible d'étudier une courbe allant jusqu'à 100 éléments avec l'aide
+ d'un super-ordinateur. Aucun des tests effectués sur nos ordis n'est venu a terme, les temps noté démontrent le temps exponentiel requis pour l'algorithme.
+ 
+b) notre algorithme 2 est une récursion terminale, veuillez vous référer au pseudo-code ci-haut.
